@@ -16,11 +16,61 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xYW-lH-1Le">
+                                <rect key="frame" x="185" y="28" width="231" height="512"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBh-Jh-EYO">
+                                        <rect key="frame" x="0.0" y="0.0" width="231" height="122"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="231" id="49E-LQ-6Dq"/>
+                                            <constraint firstAttribute="height" constant="122" id="HWv-j5-Lu6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="bwm"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47m-Ur-E55">
+                                        <rect key="frame" x="0.0" y="130" width="231" height="122"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="231" id="0Av-lR-b6o"/>
+                                            <constraint firstAttribute="height" constant="122" id="rOu-2n-gkp"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="honda"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-9k-bRQ">
+                                        <rect key="frame" x="0.0" y="260" width="231" height="122"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="122" id="MME-wS-Rvr"/>
+                                            <constraint firstAttribute="width" constant="231" id="pz0-U5-mw6"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="subaru"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLG-xF-yb8">
+                                        <rect key="frame" x="0.0" y="390" width="231" height="122"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="122" id="6fm-40-uaV"/>
+                                            <constraint firstAttribute="width" constant="231" id="VDO-fz-hr9"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="tesla"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xYW-lH-1Le" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Qz8-24-Dwv"/>
+                            <constraint firstItem="xYW-lH-1Le" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wXG-xj-pbc"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="600" y="477"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bwm" width="884" height="497"/>
+        <image name="honda" width="640" height="480"/>
+        <image name="subaru" width="1024" height="768"/>
+        <image name="tesla" width="2647" height="1600"/>
+    </resources>
 </document>

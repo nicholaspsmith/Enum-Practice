@@ -10,11 +10,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    enum Cars: String {
-        case BMW = "BMW"
-        case HONDA = "Honda"
-        case TESLA = "Tesla"
-        case SUBARU = "Subaru"
+    enum Cars: Int {
+        case BMW = 0
+        case HONDA = 1
+        case TESLA = 2
+        case SUBARU = 3
     }
     
     var carOfChoice: Cars!

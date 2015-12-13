@@ -27,30 +27,42 @@
                                             <constraint firstAttribute="height" constant="122" id="HWv-j5-Lu6"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="bwm"/>
+                                        <connections>
+                                            <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zUa-SR-dvX"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47m-Ur-E55">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47m-Ur-E55">
                                         <rect key="frame" x="0.0" y="130" width="231" height="122"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="231" id="0Av-lR-b6o"/>
                                             <constraint firstAttribute="height" constant="122" id="rOu-2n-gkp"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="honda"/>
+                                        <connections>
+                                            <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2gB-Wt-NKy"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-9k-bRQ">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fmH-9k-bRQ">
                                         <rect key="frame" x="0.0" y="260" width="231" height="122"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="122" id="MME-wS-Rvr"/>
                                             <constraint firstAttribute="width" constant="231" id="pz0-U5-mw6"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="subaru"/>
+                                        <state key="normal" title="Button" image="tesla"/>
+                                        <connections>
+                                            <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VEO-P0-HVM"/>
+                                        </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLG-xF-yb8">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bLG-xF-yb8">
                                         <rect key="frame" x="0.0" y="390" width="231" height="122"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="122" id="6fm-40-uaV"/>
                                             <constraint firstAttribute="width" constant="231" id="VDO-fz-hr9"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="tesla"/>
+                                        <state key="normal" title="Button" image="subaru"/>
+                                        <connections>
+                                            <action selector="onBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mah-ok-SQo"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

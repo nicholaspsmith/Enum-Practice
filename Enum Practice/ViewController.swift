@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var theLabel: UILabel!
+    
     enum Cars: Int {
         case BMW = 0
         case HONDA = 1
@@ -17,7 +19,6 @@ class ViewController: UIViewController {
         case SUBARU = 3
     }
     
-    var carOfChoice: Cars!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +30,18 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func onBtnTapped(sender: AnyObject) {
+    @IBAction func onBtnTapped(sender: UIButton!) {
+        
+        if sender.tag == Cars.BMW.rawValue {
+            theLabel.text = "BMW Grandpa Car"
+        } else if sender.tag == Cars.HONDA.rawValue {
+            theLabel.text = "Disgusting Ugly Car"
+        } else if sender.tag == Cars.TESLA.rawValue {
+            theLabel.text = "Electric Beauty"
+        } else if sender.tag == Cars.SUBARU.rawValue {
+            theLabel.text = "Subarus are Sweet!"
+        }
+        
     }
 
 }

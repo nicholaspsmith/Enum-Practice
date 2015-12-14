@@ -66,13 +66,28 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efw-ER-gUf">
+                                <rect key="frame" x="185" y="548" width="231" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Aqc-u0-YjB"/>
+                                    <constraint firstAttribute="width" constant="231" id="Pc3-Jh-Jgo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="efw-ER-gUf" firstAttribute="top" secondItem="xYW-lH-1Le" secondAttribute="bottom" constant="8" id="55Z-Uk-HqY"/>
                             <constraint firstItem="xYW-lH-1Le" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="Qz8-24-Dwv"/>
+                            <constraint firstItem="efw-ER-gUf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hqD-Vg-mkh"/>
                             <constraint firstItem="xYW-lH-1Le" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wXG-xj-pbc"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="theLabel" destination="efw-ER-gUf" id="c39-v0-fwK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
